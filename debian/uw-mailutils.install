@@ -1,0 +1,4 @@
+debian/logcheck/uw-mailutils	etc/logcheck/ignore.d.server/
+dmail/dmail			/usr/bin
+tmail/tmail			/usr/bin
+mailutil/mailutil		/usr/bin
