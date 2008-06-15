@@ -64,7 +64,8 @@ pre-build::
 	@sed $(SEDRULE_CONTENT) <debian/control.in.in | diff -u debian/control.in - || ( \
 		echo; \
 		echo "Upstream version has changed (or debian/control.in.in is out of sync)"; \
-		echo "Do a 'DEB_BUILD_OPTIONS=cdbs-autoupdate fakeroot debian/rules clean' or edit manually."; \
+		echo "Edit debian/control manually, or use the following command:"; \
+		echo "  DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean"; \
 		exit 1)
 
 build: debian/build-stamp
