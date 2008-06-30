@@ -1,12 +1,13 @@
-uw-imap (7:2007~dfsg-2) UNRELEASED; urgency=low
+uw-imap (7:2007b~dfsg-1) UNRELEASED; urgency=low
 
+  * New upstream release.
   * Really do semi-auto-update debian/control as promised in -1.  This
     closes: bug#461386, thanks to Tomas Pospisek.
   * Update semi-auto-update warning in debian/rules to advertise
     DEB_AUTO_UPDATE_DEBIAN_CONTROL.
   * Update cdbs dependency cleanup to strip cdbs 0.4.27 (not 0.4.27-1).
 
- -- Jonas Smedegaard <dr@jones.dk>  Wed, 26 Dec 2007 21:55:18 +0100
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 30 Jun 2008 22:19:33 +0200
 
 uw-imap (7:2007~dfsg-1) unstable; urgency=low
 
