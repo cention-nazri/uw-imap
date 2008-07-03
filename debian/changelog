@@ -9,6 +9,16 @@ uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
   * Set urgency=medium as this should hopefully reach Lenny.
   * Release for experimental as instructed by Release team at the end of
     http://lists.debian.org/debian-devel-announce/2008/06/msg00000.html
+  * Update local cdbs snippets:
+    + Major improvements to copyright-check, most importantly avoiding a
+      FTBFS by only warning about changes to copyright-hints by default.
+      Update debian/copyright_hints.
+    + Various improvements to upstream-tarball.mk, including renaming
+      top srcdir in repackaged tarball to $pkg-$ver.orig to comply with
+      Developers Reference 6.7.8.2.  Simplify use in debian/rules.
+    + Update debian/README.cdbs-tweaks.
+  * Semi-auto-update debian/control to apply above cdbs-related changes:
+    DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
 
  -- Jonas Smedegaard <dr@jones.dk>  Thu, 03 Jul 2008 10:00:05 +0200
 
