@@ -18,6 +18,7 @@ uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
       top srcdir in repackaged tarball to $pkg-$ver.orig to comply with
       Developers Reference 6.7.8.2.  Simplify use in debian/rules.
     + Update debian/README.cdbs-tweaks.
+  * Bump debhelper compatibility to level 6 (was 4).
   * Semi-auto-update debian/control to apply above cdbs-related changes:
     DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
 
