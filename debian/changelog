@@ -1,6 +1,7 @@
 uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
 
   * New upstream release.
+  * Unfuzz patches.
   * Really do semi-auto-update debian/control as promised in -1.  This
     closes: bug#461386, thanks to Tomas Pospisek.
   * Update semi-auto-update warning in debian/rules to advertise
