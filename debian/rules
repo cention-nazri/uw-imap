@@ -21,7 +21,7 @@ DEB_UPSTREAM_PACKAGE = imap
 DEB_UPSTREAM_TARBALL_EXTENSION = tar.Z
 DEB_UPSTREAM_TARBALL_MD5 = 4d59ce6303cf8ef93ff51341b1ce2df7
 
-DEB_UPSTREAM_REPACKAGE_EXCLUDE = docs/rfc docs/draft
+DEB_UPSTREAM_REPACKAGE_EXCLUDE = docs/rfc docs/draft src/osdep/mac/mtest.sit.hqx
 
 major = $(DEB_UPSTREAM_TARBALL_VERSION)
 minor = 0
@@ -99,7 +99,7 @@ pre-build::
 	done
 
 clean:: 
-	for file in `find debian -maxdepth 2 -type f -name '*.in' -not -name control.in -not -name control.in.in -not -name copyright.in -not -name POTFILES.in -not -name 'watch.in'`; do \
+	for file in `find debian -maxdepth 2 -type f -name '*.in' -not -name control.in -not -name control.in.in -not -name README.source.in -not -name POTFILES.in -not -name 'watch.in'`; do \
 		targetfile=`echo $$file | sed $(SEDRULE_FILENAME) -e 's/\\.in$$//'`; \
 		rm -f $$targetfile; \
 	done

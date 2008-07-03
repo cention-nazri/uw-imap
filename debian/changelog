@@ -7,6 +7,15 @@ uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
   * Update cdbs dependency cleanup to strip cdbs 0.4.27 (not 0.4.27-1).
   * Release for experimental as instructed by Release team at the end of
     http://lists.debian.org/debian-devel-announce/2008/06/msg00000.html
+  * Add new file README.source (only draft for now - need more work to
+    comply with Debian Policy 3.8).
+  * Rewrite debian/copyright:
+    + Use recent draft of machine-readable format proposed at
+      http://wiki.debian.org/Proposals/CopyrightFormat
+    + License debian packaging as GPL-2+
+    + Move details on repackaging and Maildir patch to README.source.
+  * Strip Macintosh binary from source (in addition to RFC documents).
+    Document stripped files in README.source.
   * Update local cdbs snippets:
     + Major improvements to copyright-check, most importantly avoiding a
       FTBFS by only warning about changes to copyright-hints by default.
