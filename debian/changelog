@@ -17,6 +17,10 @@ uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
     + Move details on repackaging and Maildir patch to README.source.
   * Strip Macintosh binary from source (in addition to RFC documents).
     Document stripped files in README.source.
+  * Rely on debhelper to install lintian overrides (without tightening
+    build-dependency: overrides are just gracefully ignored if too old
+    debhelper is used), thanks to lintian.
+  * Drop deprecated linda overrides, thanks to lintian.
   * Update local cdbs snippets:
     + Major improvements to copyright-check, most importantly avoiding a
       FTBFS by only warning about changes to copyright-hints by default.
