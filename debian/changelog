@@ -12,6 +12,7 @@ uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
   * Rewrite debian/copyright:
     + Use recent draft of machine-readable format proposed at
       http://wiki.debian.org/Proposals/CopyrightFormat
+    + Refer to Apache 2.0 license at common location, thanks to lintian
     + License debian packaging as GPL-2+
     + Move details on repackaging and Maildir patch to README.source.
   * Strip Macintosh binary from source (in addition to RFC documents).
