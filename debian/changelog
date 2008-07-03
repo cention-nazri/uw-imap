@@ -2,8 +2,6 @@ uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
 
   * New upstream release.
   * Unfuzz patches.
-  * Really do semi-auto-update debian/control as promised in -1.  This
-    closes: bug#461386, thanks to Tomas Pospisek.
   * Update semi-auto-update warning in debian/rules to advertise
     DEB_AUTO_UPDATE_DEBIAN_CONTROL.
   * Update cdbs dependency cleanup to strip cdbs 0.4.27 (not 0.4.27-1).
@@ -20,6 +18,11 @@ uw-imap (7:2007b~dfsg-1) experimental; urgency=medium
   * Bump debhelper compatibility to level 6 (was 4).
   * Semi-auto-update debian/control to apply above cdbs-related changes:
     DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean
+    This also bumps names of binary library packages (historic artifact
+    to cope with restrictive license that has since been improved, but
+    too much in the packaging routines is tied to that naming scheme to
+    change this close to release of Lenny), and updates README.Debian
+    (and more) which closes: bug#461386, thanks to Tomas Pospisek.
   * Set urgency=medium as this should hopefully reach Lenny, due to new
     release containing only bugfixes, and the cdbs fixes to avoid FTBFS.
 
