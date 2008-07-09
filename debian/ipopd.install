@@ -1,3 +1,2 @@
-debian/logcheck/ipopd	/etc/logcheck/ignore.d.server/
 ipopd/ipop2d		/usr/sbin/
 ipopd/ipop3d		/usr/sbin/
