@@ -1,2 +1,1 @@
-debian/logcheck/uw-imapd	etc/logcheck/ignore.d.server/
 imapd/imapd			/usr/sbin/

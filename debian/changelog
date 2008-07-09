@@ -2,6 +2,7 @@ uw-imap (7:2007b~dfsg-2) UNRELEASED; urgency=low
 
   * Packaging moved to collab-maint Git at Alioth. Update VCS-* hints.
   * Update Danish (da) locale.
+  * Let debhelper install logcheck rules.
 
  -- Jonas Smedegaard <dr@jones.dk>  Thu, 03 Jul 2008 13:20:20 +0200
 
