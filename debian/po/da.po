@@ -112,4 +112,4 @@ msgstr ""
 #. Description
 #: ../uw-imapd.templates:3001
 msgid "The uw-imap daemon supports listening simultaneously on several ports."
-msgstr ""UW-imap dæmonen understøtter at lytte på flere porte samtidigt."
+msgstr "UW-imap dæmonen understøtter at lytte på flere porte samtidigt."
