@@ -2,10 +2,13 @@ uw-imap (7:2007b~dfsg-2) UNRELEASED; urgency=low
 
   * Packaging moved to collab-maint Git at Alioth. Update VCS-* hints.
   * Update Danish (da) locale.
+  * Update Brazilian Portuguese (pt_BR). Closes: #469320, thanks to Eder
+    L. Marques.
   * Let debhelper install logcheck rules.
   * Fix logcheck rules to ignore connections from resolved domains (not
     only IP numbers).  Closes: bug#298706, #427498, thanks to Donovan
     Baarda and Justin Pryzby.
+  * Thanks to Christian Perrier for help pushing this release!
 
  -- Jonas Smedegaard <dr@jones.dk>  Thu, 03 Jul 2008 13:20:20 +0200
 
