@@ -29,7 +29,7 @@ diff -ruN uw-imap-2006k~dfsg.orig/Makefile uw-imap-2006k~dfsg/Makefile
  	SPECIALS="SSLINCLUDE=/usr/include/openssl SSLLIB=/usr/lib SSLCERTS=/etc/pki/tls/certs SSLKEYS=/etc/pki/tls/private GSSDIR=/usr/kerberos"
  
 +ldbs:	an
-+	$(BUILD) BUILDTYPE=lnps \
++	$(BUILD) BUILDTYPE=lnps IP=$(IP6) \
 +	SPECIALS="GSSDIR=/usr SSLDIR=/usr SSLINCLUDE=/usr/include/openssl SSLCERTS=/etc/ssl/certs SSLKEYS=/etc/ssl/private"
 +
  lmd:	an

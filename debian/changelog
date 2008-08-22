@@ -1,3 +1,14 @@
+uw-imap (7:2007b~dfsg-3) unstable; urgency=high
+
+  * Fix patch 1001 to properly include IP6 flag, so package get compiled
+    with IPv6 support as intended.  Closes: bug#268251, thanks to
+    Herbert Meier and others for reporting and to Christophe Wolfhugel
+    for spotting the cause of the problem and providing a patch.
+  * Setting urgency=high as this is a regression to earlier releases,
+    and the fix is quite small.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 22 Aug 2008 09:57:49 +0200
+
 uw-imap (7:2007b~dfsg-2) unstable; urgency=medium
 
   * Packaging moved to collab-maint Git at Alioth. Update VCS-* hints.
