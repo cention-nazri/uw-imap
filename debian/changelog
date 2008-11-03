@@ -1,3 +1,12 @@
+uw-imap (7:2007b~dfsg-4) testing-proposed-updates; urgency=high
+
+  * Add patch 0001 from newer 2007d release, fixing local exploitable
+    security hole in dmail and tmail. Thanks to Tomas Pospisek for
+    reporting.
+  * Set urgency=high due to security issue.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 03 Nov 2008 14:21:15 +0100
+
 uw-imap (7:2007b~dfsg-3) unstable; urgency=high
 
   * Fix patch 1001 to properly include IP6 flag, so package get compiled

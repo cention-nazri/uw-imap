@@ -1,3 +1,4 @@
+0001_insecure_strcmp.patch
 1001_shlibs.patch
 1003_maildir.patch
 2002_mailspool.patch
