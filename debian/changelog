@@ -1,3 +1,11 @@
+uw-imap (7:2007d~dfsg-1) unstable; urgency=high
+
+  * New upstream release.
+  * Set urgency=high as this release fixes a locally exploitable hole in
+    dmail and tmail.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 03 Nov 2008 13:19:02 +0100
+
 uw-imap (7:2007b~dfsg-3) unstable; urgency=high
 
   * Fix patch 1001 to properly include IP6 flag, so package get compiled
