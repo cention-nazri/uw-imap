@@ -3,9 +3,11 @@ uw-imap (7:2007b~dfsg-3+lenny1) testing-security; urgency=high
   * Add patch 0001 from newer 2007d release, fixing local exploitable
     security hole in dmail and tmail. Thanks to Tomas Pospisek for
     reporting.
+  * Add patch 0002 from newer 2007d release, to not close already closed
+    smtp netstream.
   * Set urgency=high due to security issue.
 
- -- Jonas Smedegaard <dr@jones.dk>  Mon, 03 Nov 2008 14:21:15 +0100
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 03 Nov 2008 19:08:19 +0100
 
 uw-imap (7:2007b~dfsg-3) unstable; urgency=high
 
