@@ -1,4 +1,4 @@
-uw-imap (7:2007b~dfsg-4) testing-security; urgency=high
+uw-imap (7:2007b~dfsg-3+lenny1) testing-security; urgency=high
 
   * Add patch 0001 from newer 2007d release, fixing local exploitable
     security hole in dmail and tmail. Thanks to Tomas Pospisek for
