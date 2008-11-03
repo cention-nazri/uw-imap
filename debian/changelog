@@ -11,6 +11,7 @@ uw-imap (7:2007d~dfsg-1) unstable; urgency=high
     + Add new local package-relations.mk to merge duplicate
       build-dependencies and more.  Drop cleanup in debian/rules.
     + Update debian/README.cdbs-tweaks.
+  * Update copyright hints.
   * Add DEB_MAINTAINER_MODE in debian/rules (thanks to Romain Beauxis).
   * Semi-auto-update debian/control to update dependencies:
       DEB_MAINTAINER_MODE=1 fakeroot debian/rules clean
