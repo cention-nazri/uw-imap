@@ -12,7 +12,7 @@ uw-imap (8:2007b~dfsg-1) unstable; urgency=medium
   * Set urgency=medium due to soname fix (security issue already in
     7:2007d~dfsg-1 and 7:2007b~dfsg-4+lenny1, so urgency=high unneeded.
 
- -- Jonas Smedegaard <dr@jones.dk>  Mon, 03 Nov 2008 19:08:19 +0100
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 01 Dec 2008 03:22:45 +0100
 
 uw-imap (7:2007d~dfsg-1) unstable; urgency=high
 
