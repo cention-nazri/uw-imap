@@ -1,10 +1,16 @@
-Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat?action=recall&rev=163
+Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat?action=recall&rev=413
 Upstream-Name: IMAP Toolkit Environment
-Upstream-Maintainer: c-client-request@u.washington.edu
-                     http://www.washington.edu/imap/imap-list.html
-                     news:comp.mail.imap
-Upstream-Source-Location: ftp://ftp.cac.washington.edu/mail/
-                          http://staff.washington.edu/chappa/pine/info/maildir.html
+Upstream-Maintainer: imap-uw@u.washington.edu
+ http://www.washington.edu/imap/lists/imap-uw.html
+ news:comp.mail.imap
+Upstream-Source: ftp://ftp.cac.washington.edu/mail/
+ http://staff.washington.edu/chappa/pine/info/maildir.html
+
+X-Files-Stripped: docs/rfc docs/draft
+X-Files-Stripped-Reason: Non-DFSG-free RFC documents and RFC drafts.
+
+X-Files-Stripped: src/osdep/mac/mtest.sit.hqx
+X-Files-Stripped-Reason: Binary file (tarball with Macintosh ressources)
 
 Files: *
 Copyright: © 1988-2008, University of Washington
@@ -25,8 +31,9 @@ Files: debian/*
 Copyright: © 2002-2008, Jonas Smedegaard <dr@jones.dk>
            © 2000-2002, Jaldhar H. Vyas <jaldhar@debian.org>
 License: GPL-2+
+ On Debian systems, the complete text of the GNU GPL (General Public
+ License) version 2 can be found at /usr/share/common-licenses/GPL-2.
 
-On Debian systems, the complete text of the GNU GPL (General Public
-License) version 2 can be found at /usr/share/common-licenses/GPL-2, and
-the complete text of the Apache license version 2.0 can be found at
-/usr/share/common-licenses/Apache-2.0.
+License: Apache-2.0
+ On Debian systems, the complete text of the Apache license version 2.0
+ can be found at /usr/share/common-licenses/Apache-2.0.
