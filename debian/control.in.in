@@ -12,7 +12,7 @@ Package: uw-imapd
 Section: mail
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, openssl, libpam-runtime (>= 0.76-13.1), openbsd-inetd | inet-superserver
-Recommends: exim4 | mail-transport-agent
+Recommends: default-mta | mail-transport-agent
 Suggests: mutt | imap-client, logcheck
 Provides: imap-server
 Conflicts: imap-server
@@ -32,7 +32,7 @@ Package: ipopd
 Section: mail
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, openssl, libpam-runtime (>= 0.76-13.1), openbsd-inetd | inet-superserver
-Recommends: exim4 | mail-transport-agent
+Recommends: default-mta | mail-transport-agent
 Conflicts: pop3-server
 Provides: pop3-server
 Suggests: logcheck
