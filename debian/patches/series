@@ -2,7 +2,6 @@
 0002_no_close_quit_netstream.patch
 0003_CVE-2008-5514.patch
 1001_shlibs.patch
-1003_maildir.patch
 2002_mailspool.patch
 2004_no_binaries_below_etc.patch
 2010_disallow_escaping_home.patch

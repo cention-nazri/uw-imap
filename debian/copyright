@@ -3,8 +3,6 @@ Upstream-Name: IMAP Toolkit Environment
 Upstream-Maintainer: imap-uw@u.washington.edu
  http://www.washington.edu/imap/lists/imap-uw.html
  news:comp.mail.imap
-Upstream-Source: ftp://ftp.cac.washington.edu/mail/
- http://staff.washington.edu/chappa/pine/info/maildir.html
 
 X-Files-Stripped: docs/rfc docs/draft
 X-Files-Stripped-Reason: Non-DFSG-free RFC documents and RFC drafts.
