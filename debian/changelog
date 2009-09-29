@@ -1,3 +1,13 @@
+uw-imap (8:2007b~dfsg-1.1) unstable; urgency=high
+
+  * Non-maintainer upload by the Security Team.
+  * Fix denial of service vulnerability because of rfc822_output_char() not
+    checking for a full buffer and writing one byte ahead the buffer, later
+    resulting in memcpy getting called with a possible size argument of -1
+    (0003_CVE-2008-5514.patch; Closes: #510918)
+
+ -- Nico Golde <nion@debian.org>  Thu, 15 Jan 2009 19:00:01 +0100
+
 uw-imap (8:2007b~dfsg-1) unstable; urgency=medium
 
   * Revert to older upstream 2007b, and instead bump epoc, as simplest
