@@ -1,3 +1,25 @@
+uw-imap (8:2007e~dfsg-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * Update debian/copyright:
+    + Add X-Files-Stripped and X-Files-Stripped-Reason notes for files
+      stripped in repackaged source
+    + Update contact infor for upstream author
+    + Attach note on Debian-distributed license texts to respective tags
+    + Bump to revision 413 of new copyright format
+  * Recommend default-mta (not exim4) as, well, default MTA.
+  * Have uw-imapd and ipopd PAM files include common-session-
+    noninteractive (not common-session), and tighten dependencies on
+    libpam-runtime to versions providing the included file.
+  * Drop patches 0001-0003 part of current upstream source.
+  * Drop patch 1003 (maildir support) as it is not freely licensed and
+    its author has explicitly requested its removal.  Add NEWS item and
+    rewrite README.Debian section.  Update debian/control.
+  * Stop SONAME from auto-bumping with each new release (but do bump
+    this time around due to dropped Maildir patch).
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 03 Oct 2009 23:33:31 +0200
+
 uw-imap (8:2007b~dfsg-1.1) unstable; urgency=high
 
   * Non-maintainer upload by the Security Team.

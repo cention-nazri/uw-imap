@@ -512,8 +512,7 @@ Apache-2.0 [(((unsigned)>=060)&((unsigned)<=067)) / 1988-2006 University of Wash
 	src/osdep/unix/os_sv2.c
 	src/osdep/unix/os_sv4.c
 	src/osdep/unix/os_vu2.h
-*No copyright* UNKNOWN []: src/osdep/mac/mtest.sit.hqx
-	src/osdep/vms/link.opt
+*No copyright* UNKNOWN []: src/osdep/vms/link.opt
 	src/osdep/vms/link_mnt.opt
 	src/osdep/vms/link_nlb.opt
 Apache-2.0 [1988 Stanford University / 1988-2006 University of Washington]: src/c-client/misc.c
