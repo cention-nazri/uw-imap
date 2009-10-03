@@ -23,7 +23,7 @@ DEB_UPSTREAM_TARBALL_MD5 = 519d68a8650420ae33eb7085dd6a8150
 
 DEB_UPSTREAM_REPACKAGE_EXCLUDE = docs/rfc docs/draft src/osdep/mac/mtest.sit.hqx
 
-major = $(DEB_UPSTREAM_TARBALL_VERSION)
+major = 2007e
 minor = 0
 
 SEDRULE_FILENAME = -e 's/__VER__/$(major)/g'
