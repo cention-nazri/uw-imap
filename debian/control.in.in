@@ -11,11 +11,11 @@ Homepage: http://www.washington.edu/imap/
 Package: uw-imapd
 Section: mail
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, openssl, libpam-runtime (>= 1.0.1-11), openbsd-inetd | inet-superserver
-Recommends: default-mta | mail-transport-agent
-Suggests: mutt | imap-client, logcheck
-Provides: imap-server
-Conflicts: imap-server
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${cdbs:Depends}
+Recommends: ${cdbs:Recommends}
+Suggests: ${cdbs:Suggests}
+Conflicts: ${cdbs:Conflicts}
+Provides: ${cdbs:Provides}
 Description: remote mail folder access server using IMAP4rev1
  IMAP (Internet Message Access Protocol) is a method of accessing
  electronic messages kept on a (possibly shared) mail server.
@@ -31,11 +31,11 @@ Description: remote mail folder access server using IMAP4rev1
 Package: ipopd
 Section: mail
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, openssl, libpam-runtime (>= 1.0.1-11), openbsd-inetd | inet-superserver
-Recommends: default-mta | mail-transport-agent
-Conflicts: pop3-server
-Provides: pop3-server
-Suggests: logcheck
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${cdbs:Depends}
+Recommends: ${cdbs:Recommends}
+Suggests: ${cdbs:Suggests}
+Conflicts: ${cdbs:Conflicts}
+Provides: ${cdbs:Provides}
 Description: POP2 and POP3 mail server
  IMAP (Internet Message Access Protocol) is a method of accessing
  electronic messages kept on a (possibly shared) mail server.
@@ -52,9 +52,9 @@ Package: libc-client__VER__-dev
 Section: libdevel
 Architecture: any
 Depends: libc-client__VER__ (= ${binary:Version}), ${devlibs:Depends}
-Conflicts: libc-client-dev
-Replaces: libc-client-dev
-Provides: libc-client-dev
+Conflicts: ${cdbs:Conflicts}
+Replaces: ${cdbs:Replaces}
+Provides: ${cdbs:Provides}
 Description: c-client library for mail protocols - development files
  IMAP (Internet Message Access Protocol) is a method of accessing
  electronic messages kept on a (possibly shared) mail server.
@@ -70,8 +70,8 @@ Description: c-client library for mail protocols - development files
 Package: libc-client__VER__
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libpam-modules, mlock
-Suggests: uw-mailutils
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${cdbs:Depends}
+Suggests: ${cdbs:Suggests}
 Description: c-client library for mail protocols - library files
  IMAP (Internet Message Access Protocol) is a method of accessing
  electronic messages kept on a (possibly shared) mail server.
