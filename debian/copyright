@@ -3,6 +3,7 @@ Name: IMAP Toolkit Environment
 Contact: imap-uw@u.washington.edu
  http://www.washington.edu/imap/lists/imap-uw.html
  news:comp.mail.imap
+Source: ftp://ftp.cac.washington.edu/mail
 
 X-Stripped: docs/rfc docs/draft
 X-Stripped-Reason: Non-DFSG-free RFC documents and RFC drafts.
