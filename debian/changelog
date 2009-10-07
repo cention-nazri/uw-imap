@@ -44,7 +44,7 @@ uw-imap (8:2007e~dfsg-1) unstable; urgency=low
   * Use lowercase hostname variable in postinsts to not bogusly upset
     lintian.
 
- -- Jonas Smedegaard <dr@jones.dk>  Wed, 07 Oct 2009 15:07:51 +0200
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 07 Oct 2009 15:15:57 +0200
 
 uw-imap (8:2007b~dfsg-1.1) unstable; urgency=high
 

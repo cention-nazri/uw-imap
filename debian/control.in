@@ -52,9 +52,9 @@ Package: libc-client2007e-dev
 Section: libdevel
 Architecture: any
 Depends: libc-client2007e (= ${binary:Version}), ${devlibs:Depends}, ${misc:Depends}
-Conflicts: ${cdbs:Conflicts}
-Replaces: ${cdbs:Replaces}
-Provides: ${cdbs:Provides}
+Conflicts: libc-client-dev
+Replaces: libc-client-dev
+Provides: libc-client-dev
 Description: c-client library for mail protocols - development files
  IMAP (Internet Message Access Protocol) is a method of accessing
  electronic messages kept on a (possibly shared) mail server.
