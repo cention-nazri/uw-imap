@@ -225,10 +225,5 @@ CBS_PROVIDES_uw-imapd = imap-server
 CDBS_CONFLICTS_uw-imapd = pop3-server
 CBS_PROVIDES_uw-imapd = pop3-server
 
-# Ensure only one variant is installed at a time (Debian Policy 7.6.2)
-CDBS_CONFLICTS_libc-client$(major)-dev = libc-client-dev
-CBS_REPLACES_libc-client$(major)-dev = libc-client-dev
-CBS_PROVIDES_libc-client$(major)-dev = libc-client-dev
-
 # Resolve, cleanup and apply CDBS-declared dependencies
 include debian/cdbs/1/rules/package-relations.mk
