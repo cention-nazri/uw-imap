@@ -51,7 +51,7 @@ Description: POP2 and POP3 mail server
 Package: libc-client__VER__-dev
 Section: libdevel
 Architecture: any
-Depends: libc-client__VER__ (= ${binary:Version}), ${devlibs:Depends}
+Depends: libc-client__VER__ (= ${binary:Version}), ${devlibs:Depends}, ${misc:Depends}
 Conflicts: ${cdbs:Conflicts}
 Replaces: ${cdbs:Replaces}
 Provides: ${cdbs:Provides}
@@ -86,7 +86,7 @@ Description: c-client library for mail protocols - library files
 Package: mlock
 Section: mail
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: mailbox locking program
  IMAP (Internet Message Access Protocol) is a method of accessing
  electronic messages kept on a (possibly shared) mail server.
@@ -102,7 +102,7 @@ Description: mailbox locking program
 Package: uw-mailutils
 Section: mail
 Architecture: any
-Depends: ${shlibs:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: c-client support programs
  IMAP (Internet Message Access Protocol) is a method of accessing
  electronic messages kept on a (possibly shared) mail server.
