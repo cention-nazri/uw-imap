@@ -30,7 +30,7 @@ License: Apache-2.0 | other
 
 Files: debian/*
 Copyright: 2000-2002, Jaldhar H. Vyas <jaldhar@debian.org>
-	2002-2008, Jonas Smedegaard <dr@jones.dk>
+	2002-2009, Jonas Smedegaard <dr@jones.dk>
 License: GPL-2+
  On Debian systems, the complete text of the GNU GPL (General Public
  License) version 2 can be found at /usr/share/common-licenses/GPL-2.
