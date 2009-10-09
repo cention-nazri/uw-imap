@@ -1,3 +1,9 @@
+uw-imap (8:2007e~dfsg-3) unstable; urgency=low
+
+  * Fix have ipopd (not uw-imapd) conflict/replace virtual pop3-server.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 09 Oct 2009 22:31:48 +0200
+
 uw-imap (8:2007e~dfsg-2) unstable; urgency=low
 
   * Explicitly conflict with alternate imap/pop daemons which use
