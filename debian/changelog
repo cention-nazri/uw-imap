@@ -1,3 +1,10 @@
+uw-imap (8:2007e~dfsg-2) unstable; urgency=low
+
+  * Explicitly conflict with alternate imap/pop daemons which use
+    identical filenames. Closes: bug#550380, thanks to Ralf Treinen.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 09 Oct 2009 22:24:04 +0200
+
 uw-imap (8:2007e~dfsg-1) unstable; urgency=low
 
   * New upstream release.
