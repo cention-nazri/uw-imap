@@ -1,5 +1,5 @@
 Source: uw-imap
-Priority: extra
+Priority: optional
 Section: mail
 Maintainer: Jonas Smedegaard <dr@jones.dk>
 Standards-Version: 3.8.0
@@ -51,6 +51,7 @@ Description: POP2 and POP3 mail server
 Package: libc-client__VER__-dev
 Section: libdevel
 Architecture: any
+Priority: extra
 Depends: libc-client__VER__ (= ${binary:Version}), ${devlibs:Depends}, ${misc:Depends}
 Conflicts: libc-client-dev
 Replaces: libc-client-dev
