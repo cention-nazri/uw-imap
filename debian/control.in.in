@@ -1,5 +1,5 @@
 Source: uw-imap
-Priority: optional
+Priority: extra
 Section: mail
 Maintainer: Jonas Smedegaard <dr@jones.dk>
 Standards-Version: 3.8.0
