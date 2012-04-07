@@ -198,8 +198,8 @@ CDBS_BUILD_DEPENDS += , d-shlibs, perl, po-debconf
 
 # Needed (always/often/seldom) at runtime
 #  * openssl used in postinst scripts for creating certificate
-CDBS_DEPENDS_uw-imapd = openssl, libpam-runtime (>= 1.0.1-11), openbsd-inetd | inet-superserver
-CDBS_DEPENDS_ipopd = openssl, libpam-runtime (>= 1.0.1-11), openbsd-inetd | inet-superserver
+CDBS_DEPENDS_uw-imapd = openssl, libpam-runtime, openbsd-inetd | inet-superserver
+CDBS_DEPENDS_ipopd = openssl, libpam-runtime, openbsd-inetd | inet-superserver
 CDBS_DEPENDS_libc-client$(major) = libpam-modules, mlock
 CDBS_RECOMMENDS_uw-imapd = default-mta | mail-transport-agent
 CDBS_RECOMMENDS_ipopd = default-mta | mail-transport-agent
