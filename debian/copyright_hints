@@ -503,22 +503,11 @@ Files: debian/NEWS.in
  debian/README.build
  debian/README.source
  debian/TODO
- debian/__PKG__.config._in
- debian/__PKG__.pam._in
- debian/__PKG__.postinst._in
- debian/__PKG__.postrm._in
  debian/compat
  debian/control
  debian/control.in
  debian/control.in.in
  debian/gbp.conf
- debian/ipopd.README.debian.in
- debian/ipopd.install
- debian/ipopd.links
- debian/ipopd.lintian-overrides
- debian/ipopd.logcheck.ignore.server
- debian/ipopd.manpages
- debian/ipopd.templates
  debian/libc-client-dev.substvars
  debian/libc-client__VER__-dev.README.debian
  debian/libc-client__VER__-dev.docs.in
@@ -537,21 +526,7 @@ Files: debian/NEWS.in
  debian/patches/2010_disallow_escaping_home.patch
  debian/patches/README
  debian/patches/series
- debian/po/POTFILES.in
- debian/po/da.po
- debian/po/fi.po
- debian/po/gl.po
- debian/po/ja.po
- debian/po/sv.po
- debian/po/tr.po
  debian/source/format
- debian/uw-imapd.README.debian.in
- debian/uw-imapd.docs
- debian/uw-imapd.install
- debian/uw-imapd.lintian-overrides
- debian/uw-imapd.logcheck.ignore.server
- debian/uw-imapd.manpages
- debian/uw-imapd.templates
  debian/uw-mailutils.README.debian.in
  debian/uw-mailutils.install
  debian/uw-mailutils.logcheck.ignore.server
@@ -612,21 +587,6 @@ Copyright: 1988-2007, University of Washington
   1988-2008, University of Washington
   ret = NIL;
 License: Apache-2.0
- FIXME
-
-Files: debian/po/eu.po
- debian/po/id.po
- debian/po/pl.po
- debian/po/ru.po
- debian/po/templates.pot
-Copyright: YEAR THE PACKAGE'S HOLDER
-License: UNKNOWN
- FIXME
-
-Files: debian/po/it.po
- debian/po/vi.po
-Copyright: 2007, Free Software Foundation, Inc
-License: UNKNOWN
  FIXME
 
 Files: src/c-client/rfc822.c
@@ -702,68 +662,9 @@ Copyright: 2002-2009, 2011-2012
 License: GPL-2+
  FIXME
 
-Files: debian/po/pt_BR.po
-Copyright: 2007, Andr� Luís Lopes
-  Luís Lopes <andrelop@debian.org>, 2007,
-  geralmente inseguro e "
-  ignorada em "
-  obsoleto."
-License: UNKNOWN
- FIXME
-
-Files: debian/po/fr.po
-Copyright: 2001-2007, Christian Perrier <bubulle@debian.org>
-  d'activer imap2 et imaps."
-  d'activer pop3 et pop3s."
-  de forcer ces choix et de "
-License: UNKNOWN
- FIXME
-
-Files: debian/po/ca.po
-Copyright: 2004, Free Software Foundation, Inc
-  per suportar els Maildir. L'uw-imapd i l'ipopd no utilitzen els "
-License: UNKNOWN
- FIXME
-
-Files: debian/po/de.po
-Copyright: Helge Kreutzmann <debian@helgefjell.de>, 2007,
-  Matthias Julius <mdeb@julius-net.net>, 2006
-License: UNKNOWN
- FIXME
-
-Files: debian/po/pt.po
-Copyright: 2007, Miguel Figueiredo <elmig@debianpt.org>
-  ignorada em actualizações e reconfigurações posteriores."
-  obsoleto."
-  respeitada apenas nas instalações "
-License: UNKNOWN
- FIXME
-
-Files: debian/po/es.po
-Copyright: 2004, Software in the Public Interest
-License: UNKNOWN
- FIXME
-
 Files: NOTICE
 Copyright: 1988, Stanford University and was developed in the
   1988-2007, the University of Washington
-License: UNKNOWN
- FIXME
-
-Files: debian/po/nl.po
-Copyright: 2006-2011, THE PACKAGE'S HOLDER
-License: UNKNOWN
- FIXME
-
-Files: debian/po/cs.po
-Copyright: a aktuální verze libc-"
-  instalovan� programy, "
-  k poště na síti "
-  má server podporovat:"
-  porty a protokoly později "
-  se mají na serveru povolit."
-  verze 2003) obsahovaly "
-  zpracování "
 License: UNKNOWN
  FIXME
 

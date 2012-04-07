@@ -8,50 +8,6 @@ Vcs-Git: git://git.debian.org/git/collab-maint/uw-imap.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/uw-imap.git
 Homepage: http://www.washington.edu/imap/
 
-Package: uw-imapd
-Section: mail
-Architecture: any
-Depends: ${cdbs:Depends},
- ${misc:Depends},
- ${shlibs:Depends}
-Recommends: ${cdbs:Recommends}
-Suggests: ${cdbs:Suggests}
-Conflicts: ${cdbs:Conflicts}
-Provides: ${cdbs:Provides}
-Description: remote mail folder access server using IMAP4rev1
- IMAP (Internet Message Access Protocol) is a method of accessing
- electronic messages kept on a (possibly shared) mail server.
- .
- The UW (University of Washington) IMAP toolkit provides the c-client
- mail-handling library supporting various network transport methods,
- file system storage formats, and authentication and authorization
- methods.
- .
- This package contains imapd, an IMAP4rev1 server daemon which uses the
- c-client library.
-
-Package: ipopd
-Section: mail
-Architecture: any
-Depends: ${cdbs:Depends},
- ${misc:Depends},
- ${shlibs:Depends}
-Recommends: ${cdbs:Recommends}
-Suggests: ${cdbs:Suggests}
-Conflicts: ${cdbs:Conflicts}
-Provides: ${cdbs:Provides}
-Description: POP2 and POP3 mail server
- IMAP (Internet Message Access Protocol) is a method of accessing
- electronic messages kept on a (possibly shared) mail server.
- .
- The UW (University of Washington) IMAP toolkit provides the c-client
- mail-handling library supporting various network transport methods,
- file system storage formats, and authentication and authorization
- methods.
- .
- This package contains ipopd, a POP2 and POP3 server daemon which uses
- the c-client library.
-
 Package: libc-client2007f-dev
 Section: libdevel
 Architecture: any

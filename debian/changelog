@@ -2,6 +2,8 @@ uw-imap (8:2007f~dfsg-1) UNRELEASED; urgency=low
 
   * New upstream release.
 
+  * Stop shipping uw-imapd or ipopd daemons: Code is in bad shape and
+    better alternatives exist.
   * Lower Priority of libc-client-*-dev to extra: Depends on similarly
     prioritized comerr-dev and libkrb5-dev.
   * Drop locally included CDBS snippets: Adopted upstream.
@@ -32,14 +34,18 @@ uw-imap (8:2007f~dfsg-1) UNRELEASED; urgency=low
     + Sort and newline-delimit package relations.
     + Stop build-depending on quilt or patchutils: unneeded with source
       version 3.0 (quilt).
-    + Relax to build-depend unversioned on debhelper and devscripts, and
-      to depend unversioned on libpam-runtime for uw-mapd and ipopd:
+    + Relax to build-depend unversioned on debhelper and devscripts:
       Required versions satisfied even in oldstable.
     + Tighten build-dependency on cdbs.
-  * Drop obsolete migration routine in maintainer scripts.
-  * Update copyright file: Rewrite using format 1.0.
+    + Stop build-depending on perl: Was used in a CDBS snippet which is
+      now dropped.
+    + Stop build-depending on po-debconf: Was used for debconf of daemon
+      packages which are now dropped.
+  * Rewrite copyright file using format 1.0.
+  * Fix version in NEWS entry, to silence lintian (sadly it is 6 years
+    too late to be of real benefit).
 
- -- Jonas Smedegaard <dr@jones.dk>  Sat, 07 Apr 2012 23:53:10 +0200
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 08 Apr 2012 00:36:05 +0200
 
 uw-imap (8:2007e~dfsg-3.3) unstable; urgency=low
 
