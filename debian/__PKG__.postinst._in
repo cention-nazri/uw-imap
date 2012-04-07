@@ -39,20 +39,6 @@ if [ "$1" = "configure" ]; then
 			INETD_ACTION="enable"
 		fi
 
-		# Bug#295306
-		if dpkg --compare-versions "$2" le 7:2002edebian1-6; then
-			cachefile=/var/cache/${pkg}_inetd.conf_copy
-			if [ -r "$cachefile" ]; then
-				while read line; do
-					update-inetd --group "$inetgroup" --add "$line"
-				done < "$cachefile"
-				rm -f "$cachefile"
-			else
-				# The file has disappeared, or we're installing from
-				# 'config files' state. Install default entries.
-				INETD_ACTION="add"
-			fi
-		fi
 	fi
 
 	db_get "$pkg/protocol"
