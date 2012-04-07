@@ -27,8 +27,19 @@ uw-imap (8:2007f~dfsg-1) UNRELEASED; urgency=low
     hardening flags.
   * Extend patch 1001 to explicitly link against all used Kerberos libs.
     Closes: bug#558968. Thanks to Peter Fritzsche and Matthias Klose.
+  * Use anonscm.debian.org for Vcs-Browser field.
+  * Update package relations:
+    + Sort and newline-delimit package relations.
+    + Stop build-depending on quilt or patchutils: unneeded with source
+      version 3.0 (quilt).
+    + Relax to build-depend unversioned on debhelper and devscripts, and
+      to depend unversioned on libpam-runtime for uw-mapd and ipopd:
+      Required versions satisfied even in oldstable.
+    + Tighten build-dependency on cdbs.
+  * Drop obsolete migration routine in maintainer scripts.
+  * Update copyright file: Rewrite using format 1.0.
 
- -- Jonas Smedegaard <dr@jones.dk>  Sat, 07 Apr 2012 22:53:48 +0200
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 07 Apr 2012 23:53:10 +0200
 
 uw-imap (8:2007e~dfsg-3.3) unstable; urgency=low
 
