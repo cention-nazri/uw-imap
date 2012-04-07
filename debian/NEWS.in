@@ -1,4 +1,4 @@
-uw-imap (8:2007b~dfsg-2) unstable; urgency=low
+uw-imap (8:2007e~dfsg-1) unstable; urgency=low
 
   * Maildir support dropped!  Patch earlier applied was not freely
     licensed and its author has explicitly requested its removal.
