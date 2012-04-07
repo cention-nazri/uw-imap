@@ -1,7 +1,6 @@
-diff -ruN uw-imap-2006k~dfsg.orig/Makefile uw-imap-2006k~dfsg/Makefile
---- uw-imap-2006k~dfsg.orig/Makefile	2007-11-08 00:16:50.000000000 +0100
-+++ uw-imap-2006k~dfsg/Makefile	2007-12-10 15:58:39.000000000 +0100
-@@ -78,11 +78,13 @@
+--- a/Makefile
++++ b/Makefile
+@@ -79,11 +79,13 @@
  # hxd	HP-UX 10.x with DCE security (see shp)
  # isc	Interactive Systems
  # ldb	Debian Linux
@@ -15,16 +14,16 @@ diff -ruN uw-imap-2006k~dfsg.orig/Makefile uw-imap-2006k~dfsg/Makefile
  # lmd	Mandrake Linux
  # lr5	RedHat Enterprise 5 and later (same as lfd)
  # lrh	RedHat Linux 7.2 and later
-@@ -306,7 +308,7 @@
+@@ -307,7 +309,7 @@
  
  # Note on SCO you may have to set LN to "ln".
  
--a32 a41 aix bs3 bsi d-g d54 do4 drs epx ga4 gas gh9 ghp ghs go5 gsc gsg gso gul h11 hpp hpx lnp lyn mct mnt nec nto nxt nx3 osf os4 ptx qnx sc5 sco sgi sg6 shp sl4 sl5 slx snx soc sol sos uw2: an
-+a32 a41 aix bs3 bsi d-g d54 do4 drs epx ga4 gas gh9 ghp ghs go5 gsc gsg gso gul h11 hpp hpx lnp lnps lyn mct mnt nec nto nxt nx3 osf os4 ptx qnx sc5 sco sgi sg6 shp sl4 sl5 slx snx soc sol sos uw2: an
+-a32 a41 a52 aix bs3 bsi d-g d54 do4 drs epx ga4 gas gh9 ghp ghs go5 gsc gsg gso gul h11 hpp hpx lnp lyn mct mnt nec nto nxt nx3 osf os4 ptx qnx sc5 sco sgi sg6 shp sl4 sl5 slx snx soc sol sos uw2: an
++a32 a41 a52 aix bs3 bsi d-g d54 do4 drs epx ga4 gas gh9 ghp ghs go5 gsc gsg gso gul h11 hpp hpx lnp lnps lyn mct mnt nec nto nxt nx3 osf os4 ptx qnx sc5 sco sgi sg6 shp sl4 sl5 slx snx soc sol sos uw2: an
  	$(BUILD) BUILDTYPE=$@
  
  # If you use sv4, you may find that it works to move it to use the an process.
-@@ -371,6 +373,10 @@
+@@ -372,6 +374,10 @@
  	$(BUILD) BUILDTYPE=lnp IP=$(IP6) \
  	SPECIALS="SSLINCLUDE=/usr/include/openssl SSLLIB=/usr/lib SSLCERTS=/etc/pki/tls/certs SSLKEYS=/etc/pki/tls/private GSSDIR=/usr/kerberos"
  
@@ -35,9 +34,8 @@ diff -ruN uw-imap-2006k~dfsg.orig/Makefile uw-imap-2006k~dfsg/Makefile
  lmd:	an
  	$(BUILD) BUILDTYPE=lnp IP=$(IP6) \
  	SPECIALS="SSLINCLUDE=/usr/include/openssl SSLLIB=/usr/lib SSLCERTS=/usr/lib/ssl/certs SSLKEYS=/usr/lib/ssl/private GSSINCLUDE=/usr/include GSSLIB=/usr/lib"
-diff -ruN uw-imap-2006k~dfsg.orig/src/dmail/Makefile uw-imap-2006k~dfsg/src/dmail/Makefile
---- uw-imap-2006k~dfsg.orig/src/dmail/Makefile	2007-09-11 01:56:35.000000000 +0200
-+++ uw-imap-2006k~dfsg/src/dmail/Makefile	2007-12-10 16:00:26.000000000 +0100
+--- a/src/dmail/Makefile
++++ b/src/dmail/Makefile
 @@ -26,7 +26,7 @@
  
  
@@ -65,9 +63,8 @@ diff -ruN uw-imap-2006k~dfsg.orig/src/dmail/Makefile uw-imap-2006k~dfsg/src/dmai
  clean:
  	rm -f *.o dmail
  
-diff -ruN uw-imap-2006d.dfsg.orig/src/imapd/Makefile uw-imap-2006d.dfsg/src/imapd/Makefile
---- uw-imap-2006d.dfsg.orig/src/imapd/Makefile	2006-08-31 02:10:44.000000000 +0200
-+++ uw-imap-2006d.dfsg/src/imapd/Makefile	2006-12-19 22:11:49.000000000 +0100
+--- a/src/imapd/Makefile
++++ b/src/imapd/Makefile
 @@ -43,12 +43,12 @@
  # Get local definitions from c-client directory
  
@@ -83,9 +80,8 @@ diff -ruN uw-imap-2006d.dfsg.orig/src/imapd/Makefile uw-imap-2006d.dfsg/src/imap
  
  all:	imapd
  
-diff -ruN uw-imap-2006d.dfsg.orig/src/ipopd/Makefile uw-imap-2006d.dfsg/src/ipopd/Makefile
---- uw-imap-2006d.dfsg.orig/src/ipopd/Makefile	2006-08-31 02:17:30.000000000 +0200
-+++ uw-imap-2006d.dfsg/src/ipopd/Makefile	2006-12-19 22:11:49.000000000 +0100
+--- a/src/ipopd/Makefile
++++ b/src/ipopd/Makefile
 @@ -26,14 +26,14 @@
  
  
@@ -103,9 +99,8 @@ diff -ruN uw-imap-2006d.dfsg.orig/src/ipopd/Makefile uw-imap-2006d.dfsg/src/ipop
  
  ipopd: ipop2d ipop3d
  
-diff -ruN uw-imap-2006d.dfsg.orig/src/mailutil/Makefile uw-imap-2006d.dfsg/src/mailutil/Makefile
---- uw-imap-2006d.dfsg.orig/src/mailutil/Makefile	2006-08-31 02:21:20.000000000 +0200
-+++ uw-imap-2006d.dfsg/src/mailutil/Makefile	2006-12-19 22:11:49.000000000 +0100
+--- a/src/mailutil/Makefile
++++ b/src/mailutil/Makefile
 @@ -26,7 +26,7 @@
  
  
@@ -131,9 +126,8 @@ diff -ruN uw-imap-2006d.dfsg.orig/src/mailutil/Makefile uw-imap-2006d.dfsg/src/m
  clean:
  	rm -f *.o mailutil
  
-diff -ruN uw-imap-2006d.dfsg.orig/src/mtest/Makefile uw-imap-2006d.dfsg/src/mtest/Makefile
---- uw-imap-2006d.dfsg.orig/src/mtest/Makefile	2006-08-31 02:25:07.000000000 +0200
-+++ uw-imap-2006d.dfsg/src/mtest/Makefile	2006-12-19 22:11:49.000000000 +0100
+--- a/src/mtest/Makefile
++++ b/src/mtest/Makefile
 @@ -26,7 +26,7 @@
  
  
@@ -159,10 +153,9 @@ diff -ruN uw-imap-2006d.dfsg.orig/src/mtest/Makefile uw-imap-2006d.dfsg/src/mtes
  clean:
  	rm -f *.o mtest || true
  
-diff -ruN uw-imap-2006d.dfsg.orig/src/osdep/unix/Makefile uw-imap-2006d.dfsg/src/osdep/unix/Makefile
---- uw-imap-2006d.dfsg.orig/src/osdep/unix/Makefile	2006-12-08 02:24:54.000000000 +0100
-+++ uw-imap-2006d.dfsg/src/osdep/unix/Makefile	2006-12-19 22:13:10.000000000 +0100
-@@ -490,7 +490,19 @@
+--- a/src/osdep/unix/Makefile
++++ b/src/osdep/unix/Makefile
+@@ -498,7 +498,19 @@
  	 ACTIVEFILE=/var/lib/news/active \
  	 RSHPATH=/usr/bin/rsh \
  	 BASECFLAGS="$(GCCCFLAGS)" \
@@ -183,7 +176,7 @@ diff -ruN uw-imap-2006d.dfsg.orig/src/osdep/unix/Makefile uw-imap-2006d.dfsg/src
  
  lnx:	# Linux non-shadow passwords
  	@echo You are building for traditional Linux *without* shadow
-@@ -861,7 +873,7 @@
+@@ -869,7 +881,7 @@
  # Cleanup
  
  clean:
@@ -192,7 +185,7 @@ diff -ruN uw-imap-2006d.dfsg.orig/src/osdep/unix/Makefile uw-imap-2006d.dfsg/src
  
  
  # Dependencies
-@@ -969,6 +981,7 @@
+@@ -977,6 +989,7 @@
  	 -DLOCKPGM3=\"$(LOCKPGM3)\" > OSCFLAGS
  	echo $(BASELDFLAGS) $(EXTRALDFLAGS) > LDFLAGS
  	echo "$(ARRC) $(ARCHIVE) $(BINARIES);$(RANLIB) $(ARCHIVE)" > ARCHIVE
@@ -200,9 +193,8 @@ diff -ruN uw-imap-2006d.dfsg.orig/src/osdep/unix/Makefile uw-imap-2006d.dfsg/src
  	echo $(OS) > OSTYPE
  	./drivers $(EXTRADRIVERS) $(DEFAULTDRIVERS) dummy
  	./mkauths $(EXTRAAUTHENTICATORS) $(DEFAULTAUTHENTICATORS)
-diff -ruN uw-imap-2006k~dfsg.orig/src/tmail/Makefile uw-imap-2006k~dfsg/src/tmail/Makefile
---- uw-imap-2006k~dfsg.orig/src/tmail/Makefile	2007-12-10 16:26:58.000000000 +0100
-+++ uw-imap-2006k~dfsg/src/tmail/Makefile	2007-12-10 16:28:07.000000000 +0100
+--- a/src/tmail/Makefile
++++ b/src/tmail/Makefile
 @@ -26,7 +26,7 @@
  
  

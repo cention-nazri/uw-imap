@@ -1,6 +1,6 @@
 --- a/src/osdep/unix/flocklnx.c
 +++ b/src/osdep/unix/flocklnx.c
-@@ -57,7 +57,7 @@ int safe_flock (int fd,int op)
+@@ -57,7 +57,7 @@
      case ENOLCK:		/* lock table is full */
        sprintf (tmp,"File locking failure: %s",strerror (errno));
        mm_log (tmp,WARN);	/* give the user a warning of what happened */
