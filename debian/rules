@@ -148,7 +148,7 @@ clean::
 CDBS_BUILD_DEPENDS += , libpam-dev, libkrb5-dev, comerr-dev, libssl-dev
 
 # Needed for our packaging routines
-CDBS_BUILD_DEPENDS += , d-shlibs, perl
+CDBS_BUILD_DEPENDS += , d-shlibs
 
 # Needed (always/often/seldom) at runtime
 CDBS_DEPENDS_libc-client$(major) = libpam-modules, mlock
