@@ -1,3 +1,25 @@
+uw-imap (8:2007f~dfsg-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+  * Lower Priority of libc-client-*-dev to extra: Depends on similarly
+    prioritized comerr-dev and libkrb5-dev.
+  * Drop locally included CDBS snippets: Adopted upstream.
+  * Use dpkg source format 3.0 (quilt).
+    Stop including patchsys-quilt.mk and update README.source to not
+    mention quilt.
+    Git-ignore quilt .pc subidr.
+  * Update rules file licensing header:
+    + Extend years, and list them explicitly.
+    + Refer to FSF web URL (not postal address).
+  * Bump debhelper compat level to 7.
+  * Unfuzz patches and refresh using quilt shortening options -pab
+    --no-timestamps --no-index.
+  * Fix use target build-arch (not build).
+    Closes: bug#666288. Thanks to Lucas Nussbaum.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 07 Apr 2012 20:39:09 +0200
+
 uw-imap (8:2007e~dfsg-3.3) unstable; urgency=low
 
   * Non-maintainer upload.
