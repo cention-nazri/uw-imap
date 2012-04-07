@@ -77,7 +77,7 @@ pre-build::
 		echo "  DEB_MAINTAINER_MODE=1 fakeroot debian/rules clean"; \
 		exit 1)
 
-build: debian/build-stamp
+build-arch: debian/build-stamp
 debian/build-stamp:
 	dh_testdir
 
