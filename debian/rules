@@ -154,9 +154,6 @@ common-install-arch::
 common-binary-post-install-arch:: debian/install-libs-stamp
 
 debian/install-libs-stamp:
-	d-devlibdeps \
-		debian/libc-client-dev.substvars \
-		debian/tmp/usr/lib/libc-client.so
 	d-shlibmove --commit \
 		--movedev "debian/tmp/usr/include/*" usr/include \
 		debian/tmp/usr/lib/libc-client.so
