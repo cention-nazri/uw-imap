@@ -17,8 +17,18 @@ uw-imap (8:2007f~dfsg-1) UNRELEASED; urgency=low
     --no-timestamps --no-index.
   * Fix use target build-arch (not build).
     Closes: bug#666288. Thanks to Lucas Nussbaum.
+  * Add patch 1003 to properly zero out len when mail_fetch_body()
+    returns an empty string.
+    Closes: bug#635839. Thanks to Vladimir Kolesnikov and Daniel T Chen.
+  * Add patch 1004 to implement support for IMAP extension METADATA
+    (rfc5464).
+    Closes: bug#456591. Thanks to Mathieu Parent and Kolab project.
+  * Explicitly pass LDFLAGS to build, to hopefully include eventual
+    hardening flags.
+  * Extend patch 1001 to explicitly link against all used Kerberos libs.
+    Closes: bug#558968. Thanks to Peter Fritzsche and Matthias Klose.
 
- -- Jonas Smedegaard <dr@jones.dk>  Sat, 07 Apr 2012 20:39:09 +0200
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 07 Apr 2012 22:53:48 +0200
 
 uw-imap (8:2007e~dfsg-3.3) unstable; urgency=low
 
