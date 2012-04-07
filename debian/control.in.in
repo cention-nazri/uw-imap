@@ -5,7 +5,7 @@ Maintainer: Jonas Smedegaard <dr@jones.dk>
 Standards-Version: 3.8.0
 Build-Depends: @cdbs@
 Vcs-Git: git://git.debian.org/git/collab-maint/uw-imap.git
-Vcs-Browser: http://git.debian.org/?p=collab-maint/uw-imap.git;a=summary
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/uw-imap.git
 Homepage: http://www.washington.edu/imap/
 
 Package: uw-imapd
