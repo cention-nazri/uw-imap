@@ -155,7 +155,7 @@
  
 --- a/src/osdep/unix/Makefile
 +++ b/src/osdep/unix/Makefile
-@@ -498,7 +498,19 @@
+@@ -498,7 +498,20 @@
  	 ACTIVEFILE=/var/lib/news/active \
  	 RSHPATH=/usr/bin/rsh \
  	 BASECFLAGS="$(GCCCFLAGS)" \
@@ -171,12 +171,13 @@
 +	 BASECFLAGS="-fPIC $(GCCCFLAGS)" \
 +	 ARCHIVE="libc-client.so" \
 +	 BASELDFLAGS="-L../c-client -lc-client $(PAMLDFLAGS) -lc" \
-+	 ARRC="gcc --shared -Wl,-soname,libc-client.so.$(VERSION) $(PAMLDFLAGS) -lc $(EXTRALDFLAGS) $(SSLLDFLAGS) -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -o" \
++	 ARRC="gcc --shared -Wl,-soname,libc-client.so.$(VERSION) -o" \
++	 LIBRARIES="$(PAMLDFLAGS) $(EXTRALDFLAGS) $(SSLLDFLAGS) -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err" \
 +	 RANLIB=true
  
  lnx:	# Linux non-shadow passwords
  	@echo You are building for traditional Linux *without* shadow
-@@ -869,7 +881,7 @@
+@@ -869,7 +882,7 @@
  # Cleanup
  
  clean:
@@ -185,10 +186,12 @@
  
  
  # Dependencies
-@@ -977,6 +989,7 @@
+@@ -976,7 +989,8 @@
+ 	 -DLOCKPGM1=\"$(LOCKPGM1)\" -DLOCKPGM2=\"$(LOCKPGM2)\" \
  	 -DLOCKPGM3=\"$(LOCKPGM3)\" > OSCFLAGS
  	echo $(BASELDFLAGS) $(EXTRALDFLAGS) > LDFLAGS
- 	echo "$(ARRC) $(ARCHIVE) $(BINARIES);$(RANLIB) $(ARCHIVE)" > ARCHIVE
+-	echo "$(ARRC) $(ARCHIVE) $(BINARIES);$(RANLIB) $(ARCHIVE)" > ARCHIVE
++	echo "$(ARRC) $(ARCHIVE) $(BINARIES) $(LIBRARIES);$(RANLIB) $(ARCHIVE)" > ARCHIVE
 +	echo $(ARCHIVE) > ARCHIVENAME
  	echo $(OS) > OSTYPE
  	./drivers $(EXTRADRIVERS) $(DEFAULTDRIVERS) dummy
