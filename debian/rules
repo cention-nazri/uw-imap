@@ -24,17 +24,11 @@ DEB_PHONY_RULES += debian/control.in
 debian/control.in::
 	sed $(SEDRULE_CONTENT) <debian/control.in.in >debian/control.in
 
-ifneq (,$(DEB_MAINTAINER_MODE))
-  # Enable stuff not policy compliant (eg. unsuitable for build daemons)
-  DEB_COPYRIGHT_CHECK_STRICT = yes
-  DEB_AUTO_UPDATE_DEBIAN_CONTROL = yes
-endif
 include /usr/share/cdbs/1/class/langcore.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/rules/patchsys-quilt.mk
-include debian/cdbs/1/rules/buildinfo.mk
-include debian/cdbs/1/rules/copyright-check.mk
-include debian/cdbs/1/rules/upstream-tarball.mk
+include /usr/share/cdbs/1/rules/utils.mk
+include /usr/share/cdbs/1/rules/upstream-tarball.mk
 
 DEB_UPSTREAM_URL = ftp://ftp.cac.washington.edu/mail
 DEB_UPSTREAM_PACKAGE = imap
@@ -83,7 +77,7 @@ pre-build::
 		echo; \
 		echo "Upstream version has changed (or debian/control.in.in is out of sync)"; \
 		echo "Edit debian/control manually, or use the following command:"; \
-		echo "  DEB_AUTO_UPDATE_DEBIAN_CONTROL=yes fakeroot debian/rules clean"; \
+		echo "  DEB_MAINTAINER_MODE=1 fakeroot debian/rules clean"; \
 		exit 1)
 
 build: debian/build-stamp
@@ -203,10 +197,10 @@ clean::
 		exit 1)
 
 # Needed by upstream build process
-CDBS_BUILD_DEPENDS := $(CDBS_BUILD_DEPENDS), libpam-dev, libkrb5-dev, comerr-dev, libssl-dev
+CDBS_BUILD_DEPENDS += , libpam-dev, libkrb5-dev, comerr-dev, libssl-dev
 
 # Needed for our packaging routines
-CDBS_BUILD_DEPENDS := $(CDBS_BUILD_DEPENDS), d-shlibs, perl, po-debconf
+CDBS_BUILD_DEPENDS += , d-shlibs, perl, po-debconf
 
 # Needed (always/often/seldom) at runtime
 #  * openssl used in postinst scripts for creating certificate
@@ -232,6 +226,3 @@ CDBS_PROVIDES_ipopd = pop3-server
 #  * cyrus-pop3d: pop PAM file
 CDBS_CONFLICTS_uw-imapd += , courier-imap, cyrus-imapd-2.2, kolab-cyrus-imapd
 CDBS_CONFLICTS_ipopd += , cyrus-pop3d
-
-# Resolve, cleanup and apply CDBS-declared dependencies
-include debian/cdbs/1/rules/package-relations.mk
