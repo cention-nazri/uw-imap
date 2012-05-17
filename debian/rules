@@ -40,7 +40,7 @@ minor = 0
 SEDRULE_FILENAME = -e 's/__VER__/$(major)/g'
 SEDRULE_CONTENT = -e 's/__LIBVER__/$(major)/g' -e 's/__LIBFULLVER__/$(major).$(minor)/g' -e 's/__VER__/$(major)/g'
 
-CFLAGS += -D_REENTRANT -DDISABLE_POP_PROXY
+CFLAGS += $(deb_cflags) -D_REENTRANT -DDISABLE_POP_PROXY
 
 # Suppress seemingly non-fatal warnings to easer spot more important ones.
 CFLAGS += -Wno-parentheses -Wno-strict-aliasing
