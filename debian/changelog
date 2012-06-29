@@ -1,6 +1,7 @@
-uw-imap (8:2007f~dfsg-1) UNRELEASED; urgency=low
+uw-imap (8:2007f~dfsg-1) unstable; urgency=low
 
   * New upstream release.
+    Closes: bug#656074. Thanks to Ivan Shmakov.
 
   * Stop shipping uw-imapd or ipopd daemons: Code is in bad shape and
     better alternatives exist.
@@ -44,8 +45,11 @@ uw-imap (8:2007f~dfsg-1) UNRELEASED; urgency=low
   * Rewrite copyright file using format 1.0.
   * Fix version in NEWS entry, to silence lintian (sadly it is 6 years
     too late to be of real benefit).
+  * Drop stray substvars file from source packaging. Thanks to lintian.
+  * Hardcode CDBS-resolved build flags, and stuff CPPFLAGS into CFLAGS,
+    to enable hardening.
 
- -- Jonas Smedegaard <dr@jones.dk>  Sun, 08 Apr 2012 00:36:05 +0200
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 29 Jun 2012 13:07:15 +0200
 
 uw-imap (8:2007e~dfsg-3.3) unstable; urgency=low
 
