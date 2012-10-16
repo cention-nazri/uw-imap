@@ -1,3 +1,9 @@
+uw-imap (8:2007f~dfsg-2) UNRELEASED; urgency=low
+
+  * New maintainer (Closes: #686448).
+
+ -- Magnus Holmgren <holmgren@debian.org>  Tue, 16 Oct 2012 21:16:43 +0200
+
 uw-imap (8:2007f~dfsg-1) unstable; urgency=low
 
   * New upstream release.
