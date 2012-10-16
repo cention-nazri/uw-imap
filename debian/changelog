@@ -1,9 +1,3 @@
-uw-imap (8:2007f~dfsg-2) UNRELEASED; urgency=high
-
-  * Sync library package names with version string (Closes: 682256).
-
- -- Magnus Holmgren <holmgren@debian.org>  Sun, 23 Sep 2012 23:16:51 +0200
-
 uw-imap (8:2007f~dfsg-1) unstable; urgency=low
 
   * New upstream release.
