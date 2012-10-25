@@ -5,3 +5,4 @@
 2002_mailspool.patch
 2004_no_binaries_below_etc.patch
 2010_disallow_escaping_home.patch
+2011_disable_version_check.patch
